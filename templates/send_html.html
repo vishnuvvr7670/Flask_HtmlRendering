@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/c1.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Send_Html Template By Using Flask </h1>
+        <h2>Name : {{ name }}</h2>
+        <h2>Age : {{ age}}</h2>
+        <h1>Image Of BGMI</h1>
+        <img src="{{ url_for('static',filename='images/bgmi.jpg') }}" alt="" height="500px",width='500px'>
+        <h3> <a href="{{ url_for('properties' )}}">Navigate To PropertiesPage</a></h3>
+    </center>
+</body>
+</html>
